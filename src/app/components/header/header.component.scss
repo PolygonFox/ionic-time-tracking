@@ -1,0 +1,24 @@
+:host {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: #fff;
+        margin: 0;
+    }
+    background: rebeccapurple;
+    animation: test .4s;
+}
+
+@keyframes test {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+

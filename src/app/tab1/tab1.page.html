@@ -1,0 +1,12 @@
+<app-header
+  title="Time Tracking"
+></app-header>
+
+<app-content>
+    <ul class="list">
+      <li class="list__item" *ngFor="let item of items" (click)="itemSelected(item.id)">
+        Title: {{ item.title }}
+        - Duration: {{ item.getTimeWorkedOn() }}
+      </li>
+    </ul>
+</app-content>
